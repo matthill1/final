@@ -20,10 +20,12 @@
 	<div>
 		<ul>
 			{% if user.is_authenticated %}
+				You are logged in. <br />
 				<a href="/rango/restricted/">Restricted Page</a><br />
 				<a href="/rango/logout/">Logout</a><br />
 				<a href="/rango/add_category/ ">Add a New Category</a><br />
 			{% else %}
+				You are not logged in. <br />
 				<a href="/rango/register/">Register Here</a><br />
 				<a href="/rango/login/">Login</a><br />
 			{% endif %}
